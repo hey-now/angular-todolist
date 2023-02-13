@@ -16,7 +16,7 @@ export class AppComponent {
   }
 
   remove(exisitingTask: Task) {
-    var userConfirm = confirm(`Are you sure you want to remove the following task? \n "${exisitingTask}"`)
+    var userConfirm = confirm(`Are you sure you want to remove the following task? \n \n "${exisitingTask.title}"`)
     if(userConfirm) {
       this.tasks = this.tasks.filter(task => task != exisitingTask);
     }
