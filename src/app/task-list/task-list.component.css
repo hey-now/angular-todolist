@@ -79,10 +79,13 @@ tr {
   flex-wrap: nowrap;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 td {
   margin-left: 1rem;
+  align-items: center;
+  display: flex;
 }
 
 .even {
@@ -98,4 +101,10 @@ td {
 .isDone {
   text-decoration: line-through;
   background-color: green;
+}
+
+p {
+  font-weight: 900;
+  font-size: large;
+  padding-top: 1rem;
 }
