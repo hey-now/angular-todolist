@@ -21,16 +21,15 @@ export class AppComponent {
       this.tasks = this.tasks.filter(task => task != exisitingTask);
     }
   }
-
-  toggleIsDone(task: Task) {
-    task.isDone = !task.isDone;
-  }
 }
 
 class Task {
 
 constructor(public title: string) {
 
+}
+toggleIsDone() {
+  this.isDone = !this.isDone;
 }
 
 public isDone = false;
