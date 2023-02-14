@@ -21,6 +21,8 @@ export class TaskListComponent implements
     new Task('Add A Task!')
   ]
 
+  selectedDate = new Date(this.route.snapshot.params['date']).toDateString();
+
   add(newTask: string) {
     this.tasks.push(new Task(newTask));
   }
